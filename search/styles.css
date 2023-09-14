@@ -1,0 +1,110 @@
+.container {
+  margin-top: 160px;
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-logo {
+  height: 92px;
+  width: 272px;
+  margin-bottom: 30px;
+}
+
+.search-bar {
+  display: flex;
+  border: 1px solid #dfe1e5;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 16px;
+  width: calc(632px + 6px);
+  width: 584px;
+  max-width: 584px;
+  border-radius: 24px;
+  outline: none;
+  margin: 0 auto;
+  transition: all 0.45s ease-out;
+}
+
+.search-bar:hover {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.google-button {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  margin-top: 30px;
+  margin-right: 10px;
+  font-size: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  cursor: pointer;
+}
+
+.h1-text {
+  color: #d93025;
+  font-size: 20px;
+  margin: 25px 35px;
+}
+
+.hrz-line {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.h2-text {
+  font-size: 16px;
+  color: #333333;
+}
+
+.div-advanced {
+  margin: 50px;
+}
+
+.row-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.left {
+  width: 200px;
+  height: 35.5px;
+  line-height: 35.5px;
+}
+
+.right {
+  width: 385px;
+}
+
+.p-adv {
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.btn-advanced {
+  box-shadow: none;
+  background-color: #4d90fe;
+  border: 1px solid #3079ed;
+  color: #fff;
+  transition: all 0.45s ease-out;
+}
+
+.btn-advanced:hover {
+  background-color: #3079ed;
+  color: #fff;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: end;
+  width: 585px;
+  margin-top: 28px;
+}

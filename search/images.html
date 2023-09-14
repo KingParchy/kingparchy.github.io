@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images Search</title>
+    <link rel="stylesheet" href="general-style.css" />
+    <link rel="stylesheet" href="nav-styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <ul class="nav">
+        <li class="nav-link"><a href="index.html">Google</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="center-div">
+        <a href="https://www.google.com/imghp?hl=en">
+          <img
+            class="google-logo"
+            src="images/google-images-logo.png"
+            alt="Google Images Logo"
+          />
+        </a>
+      </div>
+      <form action="https://www.google.com/search">
+        <input class="search-bar" type="text" name="q" />
+        <input class="search-bar" type="hidden" name="tbm" value="isch" />
+        <div class="center-div">
+          <input class="google-button" type="submit" value="Search" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

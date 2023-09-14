@@ -1,0 +1,21 @@
+.nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  margin: 5px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
