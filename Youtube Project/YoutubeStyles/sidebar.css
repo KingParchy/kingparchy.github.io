@@ -1,34 +1,34 @@
 .sidebar {
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  top: 55px;
-  background-color: white;
-  width: 72px;
-  z-index: 200;
-  padding-top: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 50px;
+    background-color: var(--BGCOLOR);
+    width: 72px;
+    z-index: 99;
+    padding-top: 5px;
 }
 
 .sidebar-link {
-  height: 74px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  cursor: pointer;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
 }
 
 .sidebar-link:hover {
-  background-color: rgb(235, 235, 235);
+    background-color: var(--SIDE-LINK-HOVER);
 }
 
 .sidebar-link img {
-  height: 24px;
-  margin-bottom: 5px;
+    height: 24px;
+    margin-bottom: 5px;
 }
 
 .sidebar-link div {
-  font-family: "Montserrat", sans-serif;
-  font-family: "Roboto", sans-serif;
-  font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
 }

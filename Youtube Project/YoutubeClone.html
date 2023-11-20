@@ -1,682 +1,738 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Youtube.com Clone</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Jeremy Parchment" />
+        <meta
+            name="description"
+            content="Youtube Clone made with HTML and CSS" />
+        <title>Youtube Clone</title>
+        <link rel="icon" href="Youtube Icons/favicon.ico" type="image/x-icon" />
+        <!-- Links to stylesheets -->
+        <link rel="stylesheet" href="YoutubeStyles/general.css" />
+        <link rel="stylesheet" href="YoutubeStyles/header.css" />
+        <link rel="stylesheet" href="YoutubeStyles/sidebar.css" />
+        <link rel="stylesheet" href="YoutubeStyles/video.css" />
+    </head>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="YoutubeStyles/general.css" />
-    <link rel="stylesheet" href="YoutubeStyles/header.css" />
-    <link rel="stylesheet" href="YoutubeStyles/sidebar.css" />
-    <link rel="stylesheet" href="YoutubeStyles/video.css" />
-  </head>
-
-  <body>
-    <div class="header">
-      <div class="left-section">
-        <img class="hamburger-menu" src="Youtube Icons/hamburger-menu.svg" />
-        <img class="youtube-logo" src="Youtube Icons/youtube-logo.svg" />
-      </div>
-
-      <div class="middle-section">
-        <input class="search-bar" type="text" placeholder="Search" />
-        <button class="search-button">
-          <img class="search-icon" src="Youtube Icons/search.svg" />
-          <div class="tooltip">Search</div>
-        </button>
-        <button class="voice-search-button">
-          <img
-            class="voice-search-icon"
-            src="Youtube Icons/voice-search-icon.svg"
-          />
-          <div class="tooltip">Search with your voice</div>
-        </button>
-      </div>
-
-      <div class="right-section">
-        <div class="upload-icon-container">
-          <img class="upload-icon" src="Youtube Icons/upload.svg" />
-          <div class="tooltip">Create</div>
-        </div>
-        <div class="youtube-apps-icon-container">
-          <img class="youtube-apps-icon" src="Youtube Icons/youtube-apps.svg" />
-          <div class="tooltip">YouTube Apps</div>
-        </div>
-
-        <div class="notifications-icon-container">
-          <img
-            class="notifications-icon"
-            src="Youtube Icons/notifications.svg"
-          />
-          <div class="notifications-count">3</div>
-          <div class="tooltip">Notifications</div>
-        </div>
-        <img
-          class="current-user-picture"
-          src="Youtube Channel Picutres/my_channel_profile_picture.jpg"
-        />
-      </div>
-    </div>
-
-    <div class="sidebar">
-      <div class="sidebar-link">
-        <img src="Youtube Icons/home.svg" />
-        <div>Home</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="Youtube Icons/explore.svg" />
-        <div>Explore</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="Youtube Icons/subscriptions.svg" />
-        <div>Subscriptions</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="Youtube Icons/originals.svg" />
-        <div>Originals</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="Youtube Icons/youtube-music.svg" />
-        <div>YouTube Music</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="Youtube Icons/library.svg" />
-        <div>Library</div>
-      </div>
-    </div>
-
-    <div class="video-grid">
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a
-            href="https://www.youtube.com/watch?v=bJ3vn9QWzhI&ab_channel=Hyperplexed"
-            target="_blank"
-          >
-            <img class="thumbnail" src="Youtube Thumbnails/thumbnail_1.webp" />
-          </a>
-          <div class="video-time">6:58</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <div class="profile-picture-container">
-              <a href="https://www.youtube.com/@Hyperplexed" target="_blank">
+    <body>
+        <div class="header">
+            <div class="left-section">
                 <img
-                  class="profile-picture"
-                  src="Youtube Channel Picutres/channel_1.jpg"
-                />
-              </a>
-              <div class="channel-tooltip">
+                    class="hamburger-menu"
+                    src="Youtube Icons/hamburger-menu.svg" />
                 <img
-                  class="channel-tooltip-picture"
-                  src="Youtube Channel Picutres/channel_1.jpg"
-                />
-                <div>
-                  <div class="channel-tooltip-name">Hyperplexed</div>
-                  <div class="channel-tooltip-stats">517K subscribers</div>
-                </div>
-              </div>
+                    class="youtube-logo"
+                    src="Youtube Icons/youtube-logo.svg" />
             </div>
-          </div>
-          <div class="video-info">
-            <a
-              href="https://www.youtube.com/watch?v=bJ3vn9QWzhI&ab_channel=Hyperplexed"
-              target="_blank"
-              class="video-title-link"
-            >
-              <p class="video-title">
-                I Redesigned Popular Websites (Amazon &#38; Google)
-              </p>
-            </a>
 
-            <p class="video-author">Hyperplexed</p>
-
-            <p class="video-stats">158K views &#183; 3 months ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a
-            href="https://www.youtube.com/watch?v=OhYhfnyAvUY&ab_channel=thakd7"
-            target="_blank"
-          >
-            <img class="thumbnail" src="Youtube Thumbnails/thumbnail_2.jpg" />
-          </a>
-          <div class="video-time">4:16</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <div class="profile-picture-container">
-              <a href="https://www.youtube.com/@thakd7" target="_blank">
-                <img
-                  class="profile-picture"
-                  src="Youtube Channel Picutres/channel_2.jpg"
-                />
-              </a>
-              <div class="channel-tooltip">
-                <img
-                  class="channel-tooltip-picture"
-                  src="Youtube Channel Picutres/channel_2.jpg"
-                />
-                <div>
-                  <div class="channel-tooltip-name">thakd7</div>
-                  <div class="channel-tooltip-stats">1.5K subscribers</div>
-                </div>
-              </div>
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="Search" />
+                <button class="search-button">
+                    <img class="search-icon" src="Youtube Icons/search.svg" />
+                    <div class="tooltip">Search</div>
+                </button>
+                <button class="voice-search-button">
+                    <img
+                        class="voice-search-icon"
+                        src="Youtube Icons/voice-search-icon.svg" />
+                    <div class="tooltip">Search with your voice</div>
+                </button>
             </div>
-          </div>
-          <div class="video-info">
-            <a
-              href="https://www.youtube.com/watch?v=OhYhfnyAvUY&ab_channel=thakd7"
-              target="_blank"
-              class="video-title-link"
-            >
-              <p class="video-title">[K-Indie] 치즈(CHEEZE) - Romance</p>
-            </a>
 
-            <p class="video-author">thakd7</p>
-
-            <p class="video-stats">2.8M views &#183; 7 years ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a href="https://youtu.be/asYSYUJJwx0" target="_blank">
-            <img class="thumbnail" src="Youtube Thumbnails/thumbnail_3.jpg" />
-          </a>
-          <div class="video-time">11:51</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <div class="profile-picture-container">
-              <a
-                href="https://www.youtube.com/@koreanenglishman/featured"
-                target="_blank"
-              >
-                <img
-                  class="profile-picture"
-                  src="Youtube Channel Picutres/channel_3.jpg"
-                />
-              </a>
-              <div class="channel-tooltip">
-                <img
-                  class="channel-tooltip-picture"
-                  src="Youtube Channel Picutres/channel_3.jpg"
-                />
-                <div>
-                  <div class="channel-tooltip-name">
-                    H영국남자 Korean Englishman
-                  </div>
-                  <div class="channel-tooltip-stats">5.7M subscribers</div>
+            <div class="right-section">
+                <div class="upload-icon-container">
+                    <img class="upload-icon" src="Youtube Icons/upload.svg" />
+                    <div class="tooltip">Create</div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="video-info">
-            <a
-              href="https://youtu.be/asYSYUJJwx0"
-              target="_blank"
-              class="video-title-link"
-            >
-              <p class="video-title">
-                When British Uni Students meet a K-Pop Star...!?!
-              </p>
-            </a>
-
-            <p class="video-author">영국남자 Korean Englishman</p>
-
-            <p class="video-stats">5.1M views &#183; 2 months ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a href="https://youtu.be/oAHbLRjF0vo" target="_blank">
-            <img class="thumbnail" src="Youtube Thumbnails/thumbnail_4.webp" />
-          </a>
-          <div class="video-time">8:28</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <div class="profile-picture-container">
-              <a href="https://www.youtube.com/@CGPGrey" target="_blank">
-                <img
-                  class="profile-picture"
-                  src="Youtube Channel Picutres/channel_4.jpg"
-                />
-              </a>
-              <div class="channel-tooltip">
-                <img
-                  class="channel-tooltip-picture"
-                  src="Youtube Channel Picutres/channel_4.jpg"
-                />
-                <div>
-                  <div class="channel-tooltip-name">CGP Grey</div>
-                  <div class="channel-tooltip-stats">5.9M subscribers</div>
+                <div class="youtube-apps-icon-container">
+                    <img
+                        class="youtube-apps-icon"
+                        src="Youtube Icons/youtube-apps.svg" />
+                    <div class="tooltip">YouTube Apps</div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="video-info">
-            <a
-              href="https://youtu.be/oAHbLRjF0vo"
-              target="_blank"
-              class="video-title-link"
-            >
-              <p class="video-title">
-                The Better Boarding Method Airlines Won&#39;t Use
-              </p>
-            </a>
 
-            <p class="video-author">CGP Grey</p>
-
-            <p class="video-stats">22M views &#183; 4 years ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a href="https://youtu.be/jsZoR1kkq6s" target="_blank">
-            <img class="thumbnail" src="Youtube Thumbnails/thumbnail_5.webp" />
-          </a>
-          <div class="video-time">17:24</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <div class="profile-picture-container">
-              <a href="https://www.youtube.com/@LamaDev" target="_blank">
-                <img
-                  class="profile-picture"
-                  src="Youtube Channel Picutres/channel_5.jpg"
-                />
-              </a>
-              <div class="channel-tooltip">
-                <img
-                  class="channel-tooltip-picture"
-                  src="Youtube Channel Picutres/channel_5.jpg"
-                />
-                <div>
-                  <div class="channel-tooltip-name">Lama Dev</div>
-                  <div class="channel-tooltip-stats">235K subscribers</div>
+                <div class="notifications-icon-container">
+                    <img
+                        class="notifications-icon"
+                        src="Youtube Icons/notifications.svg" />
+                    <div class="notifications-count">3</div>
+                    <div class="tooltip">Notifications</div>
                 </div>
-              </div>
+                <img
+                    class="current-user-picture"
+                    src="Youtube Channel Picutres/my_channel_profile_picture.jpg" />
             </div>
-          </div>
-          <div class="video-info">
-            <a
-              href="https://youtu.be/jsZoR1kkq6s"
-              target="_blank"
-              class="video-title-link"
-            >
-              <p class="video-title">
-                Don&#39;t Use a Mouse Anymore! VSCode Shortcuts Tips and Tricks
-              </p>
-            </a>
-
-            <p class="video-author">Lama Dev</p>
-
-            <p class="video-stats">327K views &#183; 1 year ago</p>
-          </div>
         </div>
-      </div>
 
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a href="https://youtu.be/dJpk6nz_DLI" target="_blank">
-            <img class="thumbnail" src="Youtube Thumbnails/thumbnail_6.webp" />
-          </a>
-          <div class="video-time">1:38:27</div>
+        <div class="sidebar">
+            <div class="sidebar-link">
+                <img src="Youtube Icons/home.svg" />
+                <div>Home</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="Youtube Icons/explore.svg" />
+                <div>Explore</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="Youtube Icons/subscriptions.svg" />
+                <div>Subscriptions</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="Youtube Icons/originals.svg" />
+                <div>Originals</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="Youtube Icons/youtube-music.svg" />
+                <div>YouTube Music</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="Youtube Icons/library.svg" />
+                <div>Library</div>
+            </div>
         </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <div class="profile-picture-container">
-              <a href="https://www.youtube.com/@Sidemen" target="_blank">
-                <img
-                  class="profile-picture"
-                  src="Youtube Channel Picutres/channel_6.jpg"
-                />
-              </a>
-              <div class="channel-tooltip">
-                <img
-                  class="channel-tooltip-picture"
-                  src="Youtube Channel Picutres/channel_6.jpg"
-                />
-                <div>
-                  <div class="channel-tooltip-name">Sidemen</div>
-                  <div class="channel-tooltip-stats">19M subscribers</div>
+
+        <div class="video-grid">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a
+                        href="https://www.youtube.com/watch?v=bJ3vn9QWzhI&ab_channel=Hyperplexed"
+                        target="_blank">
+                        <img
+                            class="thumbnail"
+                            src="Youtube Thumbnails/thumbnail_1.webp" />
+                    </a>
+                    <div class="video-time">6:58</div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="video-info">
-            <a
-              href="https://youtu.be/dJpk6nz_DLI"
-              target="_blank"
-              class="video-title-link"
-            >
-              <p class="video-title">Sidemen $30,000 VS $30 HOTEL</p>
-            </a>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <div class="profile-picture-container">
+                            <a
+                                href="https://www.youtube.com/@Hyperplexed"
+                                target="_blank">
+                                <img
+                                    class="profile-picture"
+                                    src="Youtube Channel Picutres/channel_1.jpg" />
+                            </a>
+                            <div class="channel-tooltip">
+                                <img
+                                    class="channel-tooltip-picture"
+                                    src="Youtube Channel Picutres/channel_1.jpg" />
+                                <div>
+                                    <div class="channel-tooltip-name">
+                                        Hyperplexed
+                                    </div>
+                                    <div class="channel-tooltip-stats">
+                                        517K subscribers
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a
+                            href="https://www.youtube.com/watch?v=bJ3vn9QWzhI&ab_channel=Hyperplexed"
+                            target="_blank"
+                            class="video-title-link">
+                            <p class="video-title">
+                                I Redesigned Popular Websites (Amazon &#38;
+                                Google)
+                            </p>
+                        </a>
 
-            <p class="video-author">Sidemen</p>
+                        <p class="video-author">Hyperplexed</p>
 
-            <p class="video-stats">7M views &#183; 5 days ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a
-            href="https://www.youtube.com/watch?v=BKZmRBy2QrY&ab_channel=PotatoMcWhiskey"
-            target="_blank"
-          >
-            <img class="thumbnail" src="Youtube Thumbnails/thumbnail_7.jpg" />
-          </a>
-          <div class="video-time">29:42</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <div class="profile-picture-container">
-              <a
-                href="https://www.youtube.com/@PotatoMcWhiskey/featured"
-                target="_blank"
-              >
-                <img
-                  class="profile-picture"
-                  src="Youtube Channel Picutres/channel_7.jpg"
-                />
-              </a>
-              <div class="channel-tooltip">
-                <img
-                  class="channel-tooltip-picture"
-                  src="Youtube Channel Picutres/channel_7.jpg"
-                />
-                <div>
-                  <div class="channel-tooltip-name">PotatoMcWhiskey</div>
-                  <div class="channel-tooltip-stats">506K subscribers</div>
+                        <p class="video-stats">
+                            158K views &#183; 3 months ago
+                        </p>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="video-info">
-            <a
-              href="https://www.youtube.com/watch?v=BKZmRBy2QrY&ab_channel=PotatoMcWhiskey"
-              target="_blank"
-              class="video-title-link"
-            >
-              <p class="video-title">
-                How to Analyze Start Locations in Civ 6 Rise and Fall a Guide to
-                your Settling Strategy
-              </p>
-            </a>
 
-            <p class="video-author">PotatoMcWhiskey</p>
-
-            <p class="video-stats">2.2M views &#183; 5 years ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a
-            href="https://www.youtube.com/watch?v=OCSbzArwB10&ab_channel=GothamChess"
-            target="_blank"
-          >
-            <img class="thumbnail" src="Youtube Thumbnails/thumbnail_8.jpg" />
-          </a>
-          <div class="video-time">31:27</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <div class="profile-picture-container">
-              <a
-                href="https://www.youtube.com/@GothamChess/featured"
-                target="_blank"
-              >
-                <img
-                  class="profile-picture"
-                  src="Youtube Channel Picutres/channel_8.jpg"
-                />
-              </a>
-              <div class="channel-tooltip">
-                <img
-                  class="channel-tooltip-picture"
-                  src="Youtube Channel Picutres/channel_8.jpg"
-                />
-                <div>
-                  <div class="channel-tooltip-name">GothamChess</div>
-                  <div class="channel-tooltip-stats">4.08M subscribers</div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a
+                        href="https://www.youtube.com/watch?v=OhYhfnyAvUY&ab_channel=thakd7"
+                        target="_blank">
+                        <img
+                            class="thumbnail"
+                            src="Youtube Thumbnails/thumbnail_2.jpg" />
+                    </a>
+                    <div class="video-time">4:16</div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="video-info">
-            <a
-              href="https://www.youtube.com/watch?v=OCSbzArwB10&ab_channel=GothamChess"
-              target="_blank"
-              class="video-title-link"
-            >
-              <p class="video-title">
-                How To Play Chess: The Ultimate Beginner Guide
-              </p>
-            </a>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <div class="profile-picture-container">
+                            <a
+                                href="https://www.youtube.com/@thakd7"
+                                target="_blank">
+                                <img
+                                    class="profile-picture"
+                                    src="Youtube Channel Picutres/channel_2.jpg" />
+                            </a>
+                            <div class="channel-tooltip">
+                                <img
+                                    class="channel-tooltip-picture"
+                                    src="Youtube Channel Picutres/channel_2.jpg" />
+                                <div>
+                                    <div class="channel-tooltip-name">
+                                        thakd7
+                                    </div>
+                                    <div class="channel-tooltip-stats">
+                                        1.5K subscribers
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a
+                            href="https://www.youtube.com/watch?v=OhYhfnyAvUY&ab_channel=thakd7"
+                            target="_blank"
+                            class="video-title-link">
+                            <p class="video-title">
+                                [K-Indie] 치즈(CHEEZE) - Romance
+                            </p>
+                        </a>
 
-            <p class="video-author">GothamChess</p>
+                        <p class="video-author">thakd7</p>
 
-            <p class="video-stats">5.6M views &#183; 2 years ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a href="https://youtu.be/t8E2QIsDZfM" target="_blank">
-            <img class="thumbnail" src="Youtube Thumbnails/thumbnail_9.jpg" />
-          </a>
-          <div class="video-time">1:37:47</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <div class="profile-picture-container">
-              <a href="https://www.youtube.com/@jeltooi" target="_blank">
-                <img
-                  class="profile-picture"
-                  src="Youtube Channel Picutres/channel_9.jpg"
-                />
-              </a>
-              <div class="channel-tooltip">
-                <img
-                  class="channel-tooltip-picture"
-                  src="Youtube Channel Picutres/channel_9.jpg"
-                />
-                <div>
-                  <div class="channel-tooltip-name">
-                    ジェルちゃんねる【すとぷり】
-                  </div>
-                  <div class="channel-tooltip-stats">2.05M subscribers</div>
+                        <p class="video-stats">2.8M views &#183; 7 years ago</p>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="video-info">
-            <a
-              href="https://youtu.be/t8E2QIsDZfM"
-              target="_blank"
-              class="video-title-link"
-            >
-              <p class="video-title">
-                珍回答超スペシャル総集編！！！！【遠井さん】
-              </p>
-            </a>
 
-            <p class="video-author">ジェルちゃんねる【すとぷり】</p>
-
-            <p class="video-stats">15M views &#183; 1 year ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a
-            href="https://youtu.be/x0tQibmpyqE?si=QB1gQx4wkAIR2sln"
-            target="_blank"
-          >
-            <img class="thumbnail" src="Youtube Thumbnails/thumbnail_10.webp" />
-          </a>
-          <div class="video-time">17:32</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <div class="profile-picture-container">
-              <a href="https://www.youtube.com/@xQcOW" target="_blank">
-                <img
-                  class="profile-picture"
-                  src="Youtube Channel Picutres/channel_10.jpg"
-                />
-              </a>
-              <div class="channel-tooltip">
-                <img
-                  class="channel-tooltip-picture"
-                  src="Youtube Channel Picutres/channel_10.jpg"
-                />
-                <div>
-                  <div class="channel-tooltip-name">xQc</div>
-                  <div class="channel-tooltip-stats">2.32M subscribers</div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/asYSYUJJwx0" target="_blank">
+                        <img
+                            class="thumbnail"
+                            src="Youtube Thumbnails/thumbnail_3.jpg" />
+                    </a>
+                    <div class="video-time">11:51</div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="video-info">
-            <a
-              href="https://youtu.be/x0tQibmpyqE?si=QB1gQx4wkAIR2sln"
-              target="_blank"
-              class="video-title-link"
-            >
-              <p class="video-title">
-                Lamborghini Vs Shredder | xQc Reacts to MrBeast
-              </p>
-            </a>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <div class="profile-picture-container">
+                            <a
+                                href="https://www.youtube.com/@koreanenglishman/featured"
+                                target="_blank">
+                                <img
+                                    class="profile-picture"
+                                    src="Youtube Channel Picutres/channel_3.jpg" />
+                            </a>
+                            <div class="channel-tooltip">
+                                <img
+                                    class="channel-tooltip-picture"
+                                    src="Youtube Channel Picutres/channel_3.jpg" />
+                                <div>
+                                    <div class="channel-tooltip-name">
+                                        H영국남자 Korean Englishman
+                                    </div>
+                                    <div class="channel-tooltip-stats">
+                                        5.7M subscribers
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a
+                            href="https://youtu.be/asYSYUJJwx0"
+                            target="_blank"
+                            class="video-title-link">
+                            <p class="video-title">
+                                When British Uni Students meet a K-Pop
+                                Star...!?!
+                            </p>
+                        </a>
 
-            <p class="video-author">xQc</p>
+                        <p class="video-author">영국남자 Korean Englishman</p>
 
-            <p class="video-stats">112K views &#183; 10 days ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a
-            href="https://youtu.be/kBivrTwvTVU?si=OYFf6FrcNze2xKLp"
-            target="_blank"
-          >
-            <img class="thumbnail" src="Youtube Thumbnails/thumbnail_11.webp" />
-          </a>
-          <div class="video-time">7:41</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <div class="profile-picture-container">
-              <a href="https://www.youtube.com/@ChefJackOvens" target="_blank">
-                <img
-                  class="profile-picture"
-                  src="Youtube Channel Picutres/channel_11.jpg"
-                />
-              </a>
-              <div class="channel-tooltip">
-                <img
-                  class="channel-tooltip-picture"
-                  src="Youtube Channel Picutres/channel_11.jpg"
-                />
-                <div>
-                  <div class="channel-tooltip-name">Chef Jack Ovens</div>
-                  <div class="channel-tooltip-stats">1.04M subscribers</div>
+                        <p class="video-stats">
+                            5.1M views &#183; 2 months ago
+                        </p>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="video-info">
-            <a
-              href="https://youtu.be/kBivrTwvTVU?si=OYFf6FrcNze2xKLp"
-              target="_blank"
-              class="video-title-link"
-            >
-              <p class="video-title">
-                Meal Prep For The Week In Under An Hour | Beef Stir Fry
-                Recipe&#39;
-              </p>
-            </a>
 
-            <p class="video-author">Chef Jack Ovens</p>
-
-            <p class="video-stats">2.4M views &#183; 8 months ago</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <a
-            href="https://youtu.be/mgAeK-EKlNY?si=kEHPtgaERf6Rc6s_"
-            target="_blank"
-          >
-            <img class="thumbnail" src="Youtube Thumbnails/thumbnail_12.webp" />
-          </a>
-          <div class="video-time">10:51</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <div class="profile-picture-container">
-              <a href="https://www.youtube.com/@IceChess1" target="_blank">
-                <img
-                  class="profile-picture"
-                  src="Youtube Channel Picutres/channel_12.jpg"
-                />
-              </a>
-              <div class="channel-tooltip">
-                <img
-                  class="channel-tooltip-picture"
-                  src="Youtube Channel Picutres/channel_12.jpg"
-                />
-                <div>
-                  <div class="channel-tooltip-name">Ice Chess</div>
-                  <div class="channel-tooltip-stats">8.89K subscribers</div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/oAHbLRjF0vo" target="_blank">
+                        <img
+                            class="thumbnail"
+                            src="Youtube Thumbnails/thumbnail_4.webp" />
+                    </a>
+                    <div class="video-time">8:28</div>
                 </div>
-              </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <div class="profile-picture-container">
+                            <a
+                                href="https://www.youtube.com/@CGPGrey"
+                                target="_blank">
+                                <img
+                                    class="profile-picture"
+                                    src="Youtube Channel Picutres/channel_4.jpg" />
+                            </a>
+                            <div class="channel-tooltip">
+                                <img
+                                    class="channel-tooltip-picture"
+                                    src="Youtube Channel Picutres/channel_4.jpg" />
+                                <div>
+                                    <div class="channel-tooltip-name">
+                                        CGP Grey
+                                    </div>
+                                    <div class="channel-tooltip-stats">
+                                        5.9M subscribers
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a
+                            href="https://youtu.be/oAHbLRjF0vo"
+                            target="_blank"
+                            class="video-title-link">
+                            <p class="video-title">
+                                The Better Boarding Method Airlines Won&#39;t
+                                Use
+                            </p>
+                        </a>
+
+                        <p class="video-author">CGP Grey</p>
+
+                        <p class="video-stats">22M views &#183; 4 years ago</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="video-info">
-            <a
-              href="https://youtu.be/mgAeK-EKlNY?si=kEHPtgaERf6Rc6s_"
-              target="_blank"
-              class="video-title-link"
-            >
-              <p class="video-title">
-                Magnus finally Streams and Runs Into Hikaru in Titled Tuesday
-              </p>
-            </a>
 
-            <p class="video-author">Ice Chess</p>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/jsZoR1kkq6s" target="_blank">
+                        <img
+                            class="thumbnail"
+                            src="Youtube Thumbnails/thumbnail_5.webp" />
+                    </a>
+                    <div class="video-time">17:24</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <div class="profile-picture-container">
+                            <a
+                                href="https://www.youtube.com/@LamaDev"
+                                target="_blank">
+                                <img
+                                    class="profile-picture"
+                                    src="Youtube Channel Picutres/channel_5.jpg" />
+                            </a>
+                            <div class="channel-tooltip">
+                                <img
+                                    class="channel-tooltip-picture"
+                                    src="Youtube Channel Picutres/channel_5.jpg" />
+                                <div>
+                                    <div class="channel-tooltip-name">
+                                        Lama Dev
+                                    </div>
+                                    <div class="channel-tooltip-stats">
+                                        235K subscribers
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a
+                            href="https://youtu.be/jsZoR1kkq6s"
+                            target="_blank"
+                            class="video-title-link">
+                            <p class="video-title">
+                                Don&#39;t Use a Mouse Anymore! VSCode Shortcuts
+                                Tips and Tricks
+                            </p>
+                        </a>
 
-            <p class="video-stats">2.2M views &#183; 8 months ago</p>
-          </div>
+                        <p class="video-author">Lama Dev</p>
+
+                        <p class="video-stats">327K views &#183; 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/dJpk6nz_DLI" target="_blank">
+                        <img
+                            class="thumbnail"
+                            src="Youtube Thumbnails/thumbnail_6.webp" />
+                    </a>
+                    <div class="video-time">1:38:27</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <div class="profile-picture-container">
+                            <a
+                                href="https://www.youtube.com/@Sidemen"
+                                target="_blank">
+                                <img
+                                    class="profile-picture"
+                                    src="Youtube Channel Picutres/channel_6.jpg" />
+                            </a>
+                            <div class="channel-tooltip">
+                                <img
+                                    class="channel-tooltip-picture"
+                                    src="Youtube Channel Picutres/channel_6.jpg" />
+                                <div>
+                                    <div class="channel-tooltip-name">
+                                        Sidemen
+                                    </div>
+                                    <div class="channel-tooltip-stats">
+                                        19M subscribers
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a
+                            href="https://youtu.be/dJpk6nz_DLI"
+                            target="_blank"
+                            class="video-title-link">
+                            <p class="video-title">
+                                Sidemen $30,000 VS $30 HOTEL
+                            </p>
+                        </a>
+
+                        <p class="video-author">Sidemen</p>
+
+                        <p class="video-stats">7M views &#183; 5 days ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a
+                        href="https://www.youtube.com/watch?v=BKZmRBy2QrY&ab_channel=PotatoMcWhiskey"
+                        target="_blank">
+                        <img
+                            class="thumbnail"
+                            src="Youtube Thumbnails/thumbnail_7.jpg" />
+                    </a>
+                    <div class="video-time">29:42</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <div class="profile-picture-container">
+                            <a
+                                href="https://www.youtube.com/@PotatoMcWhiskey/featured"
+                                target="_blank">
+                                <img
+                                    class="profile-picture"
+                                    src="Youtube Channel Picutres/channel_7.jpg" />
+                            </a>
+                            <div class="channel-tooltip">
+                                <img
+                                    class="channel-tooltip-picture"
+                                    src="Youtube Channel Picutres/channel_7.jpg" />
+                                <div>
+                                    <div class="channel-tooltip-name">
+                                        PotatoMcWhiskey
+                                    </div>
+                                    <div class="channel-tooltip-stats">
+                                        506K subscribers
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a
+                            href="https://www.youtube.com/watch?v=BKZmRBy2QrY&ab_channel=PotatoMcWhiskey"
+                            target="_blank"
+                            class="video-title-link">
+                            <p class="video-title">
+                                How to Analyze Start Locations in Civ 6 Rise and
+                                Fall a Guide to your Settling Strategy
+                            </p>
+                        </a>
+
+                        <p class="video-author">PotatoMcWhiskey</p>
+
+                        <p class="video-stats">2.2M views &#183; 5 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a
+                        href="https://www.youtube.com/watch?v=OCSbzArwB10&ab_channel=GothamChess"
+                        target="_blank">
+                        <img
+                            class="thumbnail"
+                            src="Youtube Thumbnails/thumbnail_8.jpg" />
+                    </a>
+                    <div class="video-time">31:27</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <div class="profile-picture-container">
+                            <a
+                                href="https://www.youtube.com/@GothamChess/featured"
+                                target="_blank">
+                                <img
+                                    class="profile-picture"
+                                    src="Youtube Channel Picutres/channel_8.jpg" />
+                            </a>
+                            <div class="channel-tooltip">
+                                <img
+                                    class="channel-tooltip-picture"
+                                    src="Youtube Channel Picutres/channel_8.jpg" />
+                                <div>
+                                    <div class="channel-tooltip-name">
+                                        GothamChess
+                                    </div>
+                                    <div class="channel-tooltip-stats">
+                                        4.08M subscribers
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a
+                            href="https://www.youtube.com/watch?v=OCSbzArwB10&ab_channel=GothamChess"
+                            target="_blank"
+                            class="video-title-link">
+                            <p class="video-title">
+                                How To Play Chess: The Ultimate Beginner Guide
+                            </p>
+                        </a>
+
+                        <p class="video-author">GothamChess</p>
+
+                        <p class="video-stats">5.6M views &#183; 2 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/t8E2QIsDZfM" target="_blank">
+                        <img
+                            class="thumbnail"
+                            src="Youtube Thumbnails/thumbnail_9.jpg" />
+                    </a>
+                    <div class="video-time">1:37:47</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <div class="profile-picture-container">
+                            <a
+                                href="https://www.youtube.com/@jeltooi"
+                                target="_blank">
+                                <img
+                                    class="profile-picture"
+                                    src="Youtube Channel Picutres/channel_9.jpg" />
+                            </a>
+                            <div class="channel-tooltip">
+                                <img
+                                    class="channel-tooltip-picture"
+                                    src="Youtube Channel Picutres/channel_9.jpg" />
+                                <div>
+                                    <div class="channel-tooltip-name">
+                                        ジェルちゃんねる【すとぷり】
+                                    </div>
+                                    <div class="channel-tooltip-stats">
+                                        2.05M subscribers
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a
+                            href="https://youtu.be/t8E2QIsDZfM"
+                            target="_blank"
+                            class="video-title-link">
+                            <p class="video-title">
+                                珍回答超スペシャル総集編！！！！【遠井さん】
+                            </p>
+                        </a>
+
+                        <p class="video-author">ジェルちゃんねる【すとぷり】</p>
+
+                        <p class="video-stats">15M views &#183; 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a
+                        href="https://youtu.be/x0tQibmpyqE?si=QB1gQx4wkAIR2sln"
+                        target="_blank">
+                        <img
+                            class="thumbnail"
+                            src="Youtube Thumbnails/thumbnail_10.webp" />
+                    </a>
+                    <div class="video-time">17:32</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <div class="profile-picture-container">
+                            <a
+                                href="https://www.youtube.com/@xQcOW"
+                                target="_blank">
+                                <img
+                                    class="profile-picture"
+                                    src="Youtube Channel Picutres/channel_10.jpg" />
+                            </a>
+                            <div class="channel-tooltip">
+                                <img
+                                    class="channel-tooltip-picture"
+                                    src="Youtube Channel Picutres/channel_10.jpg" />
+                                <div>
+                                    <div class="channel-tooltip-name">xQc</div>
+                                    <div class="channel-tooltip-stats">
+                                        2.32M subscribers
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a
+                            href="https://youtu.be/x0tQibmpyqE?si=QB1gQx4wkAIR2sln"
+                            target="_blank"
+                            class="video-title-link">
+                            <p class="video-title">
+                                Lamborghini Vs Shredder | xQc Reacts to MrBeast
+                            </p>
+                        </a>
+
+                        <p class="video-author">xQc</p>
+
+                        <p class="video-stats">112K views &#183; 10 days ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a
+                        href="https://youtu.be/kBivrTwvTVU?si=OYFf6FrcNze2xKLp"
+                        target="_blank">
+                        <img
+                            class="thumbnail"
+                            src="Youtube Thumbnails/thumbnail_11.webp" />
+                    </a>
+                    <div class="video-time">7:41</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <div class="profile-picture-container">
+                            <a
+                                href="https://www.youtube.com/@ChefJackOvens"
+                                target="_blank">
+                                <img
+                                    class="profile-picture"
+                                    src="Youtube Channel Picutres/channel_11.jpg" />
+                            </a>
+                            <div class="channel-tooltip">
+                                <img
+                                    class="channel-tooltip-picture"
+                                    src="Youtube Channel Picutres/channel_11.jpg" />
+                                <div>
+                                    <div class="channel-tooltip-name">
+                                        Chef Jack Ovens
+                                    </div>
+                                    <div class="channel-tooltip-stats">
+                                        1.04M subscribers
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a
+                            href="https://youtu.be/kBivrTwvTVU?si=OYFf6FrcNze2xKLp"
+                            target="_blank"
+                            class="video-title-link">
+                            <p class="video-title">
+                                Meal Prep For The Week In Under An Hour | Beef
+                                Stir Fry Recipe&#39;
+                            </p>
+                        </a>
+
+                        <p class="video-author">Chef Jack Ovens</p>
+
+                        <p class="video-stats">
+                            2.4M views &#183; 8 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a
+                        href="https://youtu.be/mgAeK-EKlNY?si=kEHPtgaERf6Rc6s_"
+                        target="_blank">
+                        <img
+                            class="thumbnail"
+                            src="Youtube Thumbnails/thumbnail_12.webp" />
+                    </a>
+                    <div class="video-time">10:51</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <div class="profile-picture-container">
+                            <a
+                                href="https://www.youtube.com/@IceChess1"
+                                target="_blank">
+                                <img
+                                    class="profile-picture"
+                                    src="Youtube Channel Picutres/channel_12.jpg" />
+                            </a>
+                            <div class="channel-tooltip">
+                                <img
+                                    class="channel-tooltip-picture"
+                                    src="Youtube Channel Picutres/channel_12.jpg" />
+                                <div>
+                                    <div class="channel-tooltip-name">
+                                        Ice Chess
+                                    </div>
+                                    <div class="channel-tooltip-stats">
+                                        8.89K subscribers
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a
+                            href="https://youtu.be/mgAeK-EKlNY?si=kEHPtgaERf6Rc6s_"
+                            target="_blank"
+                            class="video-title-link">
+                            <p class="video-title">
+                                Magnus finally Streams and Runs Into Hikaru in
+                                Titled Tuesday
+                            </p>
+                        </a>
+
+                        <p class="video-author">Ice Chess</p>
+
+                        <p class="video-stats">
+                            2.2M views &#183; 8 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>

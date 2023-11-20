@@ -1,14 +1,55 @@
-p {
-  font-family: "Montserrat", sans-serif;
-  font-family: "Roboto", sans-serif;
-  margin-top: 0;
-  margin-bottom: 0;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
+
+/* || RESET */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+textarea {
+    font: inherit;
+}
+
+/* || VARIABLES */
+
+:root {
+    /* FONTS */
+    --FF: "Roboto", "Montserrat", sans-serif;
+    --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+    /* COLORS */
+    --BGCOLOR: white;
+    --BODY-BGCOLOR: rgb(248, 248, 248);
+    --VTITLE-COLOR: black;
+    --SIDE-LINK-HOVER: rgb(235, 235, 235);
+    /* BORDERS */
+
+    /* STANDARD PADDING */
+    --PADDING-BODY: 5em 1.5em 0 6em;
+    /* STANDARD MARGIN */
+}
+
+/* || GENERAL STYLES */
+html {
+    scroll-behavior: smooth;
+    font-family: var(--FF);
+    background-color: var(--BODY-BGCOLOR);
+    font-size: var(--FS);
 }
 
 body {
-  margin: 0;
-  padding-top: 80px;
-  padding-left: 96px;
-  padding-right: 24px;
-  background-color: rgb(248, 248, 248);
+    background-color: var(--BODY-BGCOLOR);
+    min-height: 100vh;
+    padding: var(--PADDING-BODY);
 }
