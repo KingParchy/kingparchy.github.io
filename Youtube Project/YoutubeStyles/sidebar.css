@@ -1,16 +1,19 @@
+/* || SIDEBAR */
+
 .sidebar {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    top: 50px;
     background-color: var(--BGCOLOR);
-    width: 72px;
-    z-index: 99;
+    bottom: 0;
+    font-size: 1rem;
+    left: 0;
     padding-top: 5px;
+    position: fixed;
+    top: 50px;
+    width: 3.3em;
+    z-index: 200;
 }
 
 .sidebar-link {
-    height: 74px;
+    height: clamp(3em, 3.6em, 4em);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,12 +26,10 @@
 }
 
 .sidebar-link img {
-    height: 24px;
+    height: 1em;
     margin-bottom: 5px;
 }
 
 .sidebar-link div {
-    font-family: "Montserrat", sans-serif;
-    font-family: "Roboto", sans-serif;
     font-size: 10px;
 }
