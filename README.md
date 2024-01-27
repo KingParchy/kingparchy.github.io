@@ -9,3 +9,7 @@ This is a collection of my completed projects:
 <p>
   <a href="https://kingparchy.github.io/search/index.html" target="_blank">Google Search Project</a>
 </p>
+
+<p>
+  <a href="https://kingparchy.github.io/Learn_JavaScript/index.html" target="_blank">Dragon RPG</a>
+</p>
