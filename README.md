@@ -11,5 +11,5 @@ This is a collection of my completed projects:
 </p>
 
 <p>
-  <a href="https://kingparchy.github.io/Learn_JavaScript/index.html" target="_blank">Dragon RPG</a>
+  <a href="https://kingparchy.github.io/Dragon_RPG/index.html" target="_blank">Dragon RPG</a>
 </p>
