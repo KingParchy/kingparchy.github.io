@@ -19,7 +19,7 @@ This is a collection of projects that I have completed while learning Front End 
 </p>
 
 <p>
-  <a href="https://kingparchy.github.io/Music_Player/index.html" target="_blank">Music Player</a>
+  <a href="https://kingparchy.github.io/Music_Player/index.html" target="_blank">Music Player(未完成)</a>
 </p>
 
 <p><strong>Youtube Clone:</strong> In this project, I used HTML and CSS to recreate the Youtube homepage. It is was my very first project and it taught me a lot about CSS properties and the basic HTML structure of a page. The vidoes on the page are all from Youtube channels that I personally like to watch. It also redirects to the actual videos and channels if you click the video and channel name respectively.</p>
