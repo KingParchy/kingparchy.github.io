@@ -18,6 +18,10 @@ This is a collection of projects that I have completed while learning Front End 
   <a href="https://kingparchy.github.io/Calorie_Counter/index.html" target="_blank">Calorie Counter</a>
 </p>
 
+<p>
+  <a href="https://kingparchy.github.io/Music_Player/index.html" target="_blank">Music Player</a>
+</p>
+
 <p><strong>Youtube Clone:</strong> In this project, I used HTML and CSS to recreate the Youtube homepage. It is was my very first project and it taught me a lot about CSS properties and the basic HTML structure of a page. The vidoes on the page are all from Youtube channels that I personally like to watch. It also redirects to the actual videos and channels if you click the video and channel name respectively.</p>
 
 <p><strong>Google Search:</strong> In this project, I used HTML and CSS again to recreate the Google Search page. The main difference is that there is a little bit of functionality. If you actually type into the search bar and try to search something, it will bring up the searched text via the actual Google Search.</p>
@@ -26,3 +30,5 @@ This is a collection of projects that I have completed while learning Front End 
 
 <p><strong>Calorie Counter:</strong>
 A simple calorie counter web application made using HTML, CSS and JavaScript. The user can enter the food that they ate along with the calories, and also enter any exercise that they did and it calculates the calorie surplus or deficit. This taught me how to validate user input, perform calculations based on that input, and dynamically update the interface to display the results. I also used the JavaScript I already knew, plus basic regular expressions, template literals, event listener methods and more.</p>
+
+<p><strong>Music Player:</strong> Work in Progress (未完成)</p>
