@@ -1,4 +1,5 @@
 :root {
+    /* Define color variables */
     --light-grey: #f5f6f7;
     --dark-blue: #0a0a23;
     --fcc-blue: #1b1b32;
@@ -10,6 +11,7 @@
 }
 
 body {
+    /* Set the font family, font size, background color, and text color */
     font-family: "Lato", Helvetica, Arial, sans-serif;
     font-size: 18px;
     background-color: var(--fcc-blue);
@@ -17,10 +19,12 @@ body {
 }
 
 h1 {
+    /* Center the h1 element */
     text-align: center;
 }
 
 .container {
+    /* Set the width and max-width of the container */
     width: 90%;
     max-width: 680px;
 }
@@ -28,20 +32,24 @@ h1 {
 h1,
 .container,
 .output {
+    /* Add margin to the h1, container, and output elements */
     margin: 20px auto;
 }
 
 label,
 legend {
+    /* Make the label and legend elements bold */
     font-weight: bold;
 }
 
 .input-container {
+    /* Style the input container as a column */
     display: flex;
     flex-direction: column;
 }
 
 button {
+    /* Style the button with no outline, a cursor pointer, and a background color */
     outline: none;
     cursor: pointer;
     text-decoration: none;
@@ -50,6 +58,7 @@ button {
 }
 
 .clear {
+    /* Style the clear button with a pink background color and red text */
     background-color: var(--light-pink);
     color: var(--dark-red);
     border-color: var(--dark-red);
@@ -58,6 +67,7 @@ button {
 button,
 input,
 select {
+    /* Set the minimum height, color, and margin for buttons, inputs, and select elements */
     min-height: 24px;
     color: var(--dark-blue);
 }
@@ -67,28 +77,34 @@ label,
 button,
 input,
 select {
+    /* Add margin to the fieldset, label, button, input, and select elements */
     margin-bottom: 10px;
 }
 
 .output {
+    /* Style the output element with a grey border, padding, and centered text */
     border: 2px solid var(--light-grey);
     padding: 10px;
     text-align: center;
 }
 
 .hide {
+    /* Hide elements */
     display: none;
 }
 
 .output span {
+    /* Make the output span bold and increase the font size */
     font-weight: bold;
     font-size: 1.2em;
 }
 
 .surplus {
+    /* Style the surplus element with a green color */
     color: var(--light-green);
 }
 
 .deficit {
+    /* Style the deficit element with a pink color */
     color: var(--light-pink);
 }

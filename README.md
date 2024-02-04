@@ -15,5 +15,5 @@ This is a collection of my WIP and completed projects:
 </p>
 
 <p>
-  <a href="https://kingparchy.github.io/Calorie_Counter/index.html" target="_blank">Calorie Counter(未完成)</a>
+  <a href="https://kingparchy.github.io/Calorie_Counter/index.html" target="_blank">Calorie Counter</a>
 </p>
