@@ -1,3 +1,4 @@
+// Get the DOM elements for the playlist songs, play, pause, next, previous, and shuffle buttons
 const playlistSongs = document.getElementById("playlist-songs");
 const playButton = document.getElementById("play");
 const pauseButton = document.getElementById("pause");
@@ -5,6 +6,7 @@ const nextButton = document.getElementById("next");
 const previousButton = document.getElementById("previous");
 const shuffleButton = document.getElementById("shuffle");
 
+// Define an array of all songs
 const allSongs = [
     {
         id: 0,
@@ -78,14 +80,17 @@ const allSongs = [
     },
 ];
 
+// Create a new HTML Audio Element
 const audio = new Audio();
 
+// Initialize userData object
 let userData = {
     songs: [...allSongs],
     currentSong: null,
     songCurrentTime: 0,
 };
 
+// Play a song by its id
 const playSong = (id) => {
     const song = userData?.songs.find((song) => song.id === id);
     audio.src = song.src;
@@ -102,15 +107,20 @@ const playSong = (id) => {
 
     userData.currentSong = song;
     playButton.classList.add("playing");
+    highlightCurrentSong();
+    setPlayerDisplay();
+    setPlayButtonAccessibleText();
     audio.play();
 };
 
+// Pause the current song
 const pauseSong = () => {
     userData.songCurrentTime = audio.currentTime;
     playButton.classList.remove("playing");
     audio.pause();
 };
 
+// Play the next song in the playlist
 const playNextSong = () => {
     if (userData?.currentSong === null) {
         playSong(userData?.songs[0].id);
@@ -121,6 +131,7 @@ const playNextSong = () => {
     }
 };
 
+// Play the previous song in the playlist
 const playPreviousSong = () => {
     if (userData?.currentSong === null) {
         return;
@@ -131,6 +142,32 @@ const playPreviousSong = () => {
     }
 };
 
+// Set the player display with the current song information
+const setPlayerDisplay = () => {
+    const playingSong = document.getElementById("player-song-title");
+    const songArtist = document.getElementById("player-song-artist");
+    const currentTitle = userData?.currentSong?.title;
+    const currentArtist = userData?.currentSong?.artist;
+    playingSong.textContent = currentTitle ? currentTitle : "";
+    songArtist.textContent = currentArtist ? currentArtist : "";
+};
+
+// Highlight the current song in the playlist
+const highlightCurrentSong = () => {
+    const playlistSongElements = document.querySelectorAll(".playlist-song");
+    const songToHighlight = document.getElementById(
+        `song-${userData?.currentSong?.id}`
+    );
+
+    playlistSongElements.forEach((songEl) => {
+        songEl.removeAttribute("aria-current");
+    });
+    if (songToHighlight) {
+        songToHighlight.setAttribute("aria-current", "true");
+    }
+};
+
+// Render the songs in the playlist
 const renderSongs = (array) => {
     const songsHTML = array
         .map((song) => {
@@ -147,6 +184,16 @@ const renderSongs = (array) => {
     playlistSongs.innerHTML = songsHTML;
 };
 
+// Set the accessible text for the play button
+const setPlayButtonAccessibleText = () => {
+    const song = userData?.currentSong || userData?.songs[0];
+    playButton.setAttribute(
+        "aria-label",
+        song?.title ? `Play ${song.title}` : "Play"
+    );
+};
+
+// Get the index of the current song in the playlist
 const getCurrentSongIndex = () => {
     return userData?.songs.indexOf(userData?.currentSong);
 };
@@ -166,6 +213,7 @@ nextButton.addEventListener("click", playNextSong);
 
 previousButton.addEventListener("click", playPreviousSong);
 
+// Sort the songs alphabetically by title
 userData?.songs.sort((a, b) => {
     if (a.title < b.title) {
         return -1;
@@ -177,4 +225,5 @@ userData?.songs.sort((a, b) => {
     return 0;
 });
 
+// Render the sorted songs
 renderSongs(userData?.songs);
